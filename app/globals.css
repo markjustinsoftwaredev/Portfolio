@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@config '../tailwind.config.ts';
+
+* {
+  scrollbar-color: #00ffa3 #0b0f1a;
+}
+
+body {
+  background-color: #05070d;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 255, 163, 0.35);
+}
+
+.border-glow {
+  box-shadow: 0 0 0 1px rgba(0, 255, 163, 0.25), 0 0 24px rgba(0, 255, 163, 0.08);
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 163, 0.4);
+    border-radius: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
