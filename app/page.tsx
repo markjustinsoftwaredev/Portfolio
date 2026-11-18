@@ -1,4 +1,3 @@
-import { headers } from 'next/headers';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
@@ -9,9 +8,7 @@ import ResumeRequest from '@/components/sections/ResumeRequest';
 import Contact from '@/components/sections/Contact';
 import Terminal from '@/components/ui/Terminal';
 
-export default async function Home() {
-  const nonce = (await headers()).get('x-nonce') ?? undefined;
-
+export default function Home() {
   return (
     <>
       <Navbar />
@@ -20,8 +17,8 @@ export default async function Home() {
         <About />
         <Projects />
         <SkillsCertifications />
-        <ResumeRequest nonce={nonce} />
-        <Contact nonce={nonce} />
+        <ResumeRequest />
+        <Contact />
       </main>
       <Footer />
       <Terminal />

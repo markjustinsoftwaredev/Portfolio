@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
 import { JetBrains_Mono, Inter } from 'next/font/google';
-import { headers } from 'next/headers';
 import './globals.css';
 
 const sans = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example.com'),
+  metadataBase: new URL('https://engralzona.github.io/Portfolio'),
   title: {
-    default: 'Software Developer & Project Leader | Certified in Cyber Threat Monitoring',
+    default: 'Mark Justin Alzona | Portfolio',
     template: '%s · Portfolio',
   },
   description:
@@ -17,9 +16,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const nonce = (await headers()).get('x-nonce') ?? undefined;
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -38,7 +35,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         {children}
         <script
           type="application/ld+json"
-          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </body>
