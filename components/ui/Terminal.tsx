@@ -36,7 +36,7 @@ function runCommand(raw: string): Line[] {
 
   if (lower === 'whoami') {
     return [
-      { type: 'output', text: 'Software Developer & Project Leader.' },
+      { type: 'output', text: 'Mark Justin A. Alzona | Software Developer & Project Leader.' },
       { type: 'output', text: 'Certified in Cyber Threat Monitoring (TESDA / Radenta Academy).' },
     ];
   }

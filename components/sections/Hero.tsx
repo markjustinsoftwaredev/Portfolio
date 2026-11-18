@@ -23,6 +23,15 @@ export default function Hero() {
           NC1 Certified — Cyber Threat Monitoring
         </motion.div>
 
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.05 }}
+          className="mb-3 font-mono text-sm font-medium uppercase tracking-widest text-accent sm:text-base"
+        >
+          Mark Justin Alzona
+        </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,7 +39,7 @@ export default function Hero() {
           className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl"
         >
           Software Developer{' '}
-          <span className="text-accent text-glow">&amp; Project Leader</span>
+          <span className="text-accent text-glow">& Project Leader</span>
           <br />
           <span className="text-slate-400">| Certified in Cyber Threat Monitoring.</span>
         </motion.h1>
@@ -41,9 +50,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mx-auto mt-6 max-w-2xl text-balance text-base text-slate-400 sm:text-lg"
         >
-          I lead teams that ship scalable, cross-platform applications — and bring formal SOC
-          training to how I think about what I build. This site itself is hardened with the
-          practices you&apos;d expect from that training.
+          I lead teams that ship scalable, cross-platform applications — bringing formal SOC
+          training to build security, reliability, and clean architecture into every layer from day one.
         </motion.p>
 
         <motion.div

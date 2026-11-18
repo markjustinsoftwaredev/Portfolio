@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="fixed top-0 z-30 w-full border-b border-white/5 bg-bg/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-mono text-sm text-accent">
-          &gt; dev.secure()
+          &gt; mark.alzona()
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
