@@ -8,8 +8,8 @@ import { useState } from 'react';
 // address once a person actually clicks. This stops the simplest class of
 // mailto-scraping bots that regex the initial HTML response without
 // executing JavaScript.
-const USER = ['contact', 'portfolio'];
-const DOMAIN = ['example', 'com'];
+const USER = ['markjustinsoftwaredev'];
+const DOMAIN = ['gmail', 'com'];
 
 export default function ObfuscatedEmail() {
   const [revealed, setRevealed] = useState<string | null>(null);
