@@ -13,7 +13,7 @@ export const projects: Project[] = [
     result:
       'Centralized essential campus information into one mobile platform, improved student access to real-time updates, and streamlined daily campus navigation.',
     stack: ['Kotlin', 'Android', 'XML', 'Jetpack', 'Firebase'],
-    image: '/projects/smartcampus.png',
+    image: '/Portfolio/projects/smartcampus.png',
     hasArchitecture: false,
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     result:
       'Shipped a mobile app that salon staff could rely on regardless of connection quality, with a retention-focused redesign that measurably improved repeat bookings for partner salons.',
     stack: ['Mobile', 'MVVM', 'Offline-first sync', 'REST APIs'],
-    image: '/projects/sukilink.png',
+    image: '/Portfolio/projects/sukilink.png',
     hasArchitecture: true,
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     result:
       'Gave LGU responders a single system to see, verify, and broadcast incident information in minutes instead of relying on fragmented manual channels, across both citizen-facing and responder-facing surfaces.',
     stack: ['Cross-platform', 'GIS', 'Geomapping', 'SMS Gateway', 'Crowdsourcing'],
-    image: '/projects/ealerto.png',
+    image: '/Portfolio/projects/ealerto.png',
     hasArchitecture: true,
   },
 ];
