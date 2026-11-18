@@ -23,26 +23,23 @@ export default function Hero() {
           NC1 Certified — Cyber Threat Monitoring
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.05 }}
-          className="mb-3 font-mono text-sm font-medium uppercase tracking-widest text-accent sm:text-base"
-        >
-          Mark Justin Alzona
-        </motion.p>
-
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl"
+          className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl md:text-7xl"
         >
-          Software Developer{' '}
-          <span className="text-accent text-glow">& Project Leader</span>
-          <br />
-          <span className="text-slate-400">| Certified in Cyber Threat Monitoring.</span>
+          Mark Justin <span className="text-accent text-glow">Alzona</span>
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mt-4 text-xl font-semibold text-slate-200 sm:text-2xl md:text-3xl"
+        >
+          Software Developer & Project Leader
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}
