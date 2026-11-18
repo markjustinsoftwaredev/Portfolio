@@ -2,18 +2,18 @@ import type { Certification, Project, Skill } from '@/types';
 
 export const projects: Project[] = [
   {
-    slug: 'smartscan',
-    name: 'SmartScan System',
+    slug: 'smartcampuscompanion',
+    name: 'Smart Campus Companion',
     role: 'Project Manager',
-    tagline: 'C# QR + RFID attendance tracking for schools',
+    tagline: 'Kotlin-based mobile companion app for campus navigation, announcements, and student services',
     problem:
-      'Manual attendance logs in school settings were slow to process, easy to falsify, and gave administrators no real-time visibility into who was actually on campus.',
+      'Students and campus visitors struggled with fragmented announcements, manual schedule checks, and difficulty locating campus offices and facilities across buildings.',
     action:
-      'Led the project as Project Manager, directing a C# development team to build a dual-factor capture system combining QR code scanning and RFID tag reads, and owning the data pipeline that reconciled both inputs into a single attendance record.',
+      'Led the development of a native Android application in Kotlin, designing an intuitive mobile interface and integrating real-time campus announcements, facility directories, and student utility modules into a single unified app.',
     result:
-      'Replaced manual logging with an automated capture flow, cut attendance-processing errors, and gave school administrators a real-time, tamper-resistant view of campus attendance.',
-    stack: ['C#', '.NET', 'RFID', 'QR Code', 'SQL Server'],
-    image: '/projects/smartscan.svg',
+      'Centralized essential campus information into one mobile platform, improved student access to real-time updates, and streamlined daily campus navigation.',
+    stack: ['Kotlin', 'Android', 'XML', 'Jetpack', 'Firebase'],
+    image: '/projects/smartcampus.png',
     hasArchitecture: false,
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     result:
       'Shipped a mobile app that salon staff could rely on regardless of connection quality, with a retention-focused redesign that measurably improved repeat bookings for partner salons.',
     stack: ['Mobile', 'MVVM', 'Offline-first sync', 'REST APIs'],
-    image: '/projects/sukilink.svg',
+    image: '/projects/sukilink.png',
     hasArchitecture: true,
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     result:
       'Gave LGU responders a single system to see, verify, and broadcast incident information in minutes instead of relying on fragmented manual channels, across both citizen-facing and responder-facing surfaces.',
     stack: ['Cross-platform', 'GIS', 'Geomapping', 'SMS Gateway', 'Crowdsourcing'],
-    image: '/projects/ealerto.svg',
+    image: '/projects/ealerto.png',
     hasArchitecture: true,
   },
 ];
